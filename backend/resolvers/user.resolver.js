@@ -1,5 +1,4 @@
 import bcrypt from "bcryptjs/dist/bcrypt.js";
-import users from "../dummyData/data.js"; 
 import User from "../models/user.Model.js";
 
 
@@ -77,9 +76,9 @@ const userResolver = {
                 throw new Error("Internal server error");
             }
         },
-        user: async(_,{userID})=>{
+        user: async(_,{userId})=>{
             try {
-                const user = await User.findById(userID);
+                const user = await User.findById(userId);
                 return user
             } catch (err) {
                 console.log("Error in user query:",err);
