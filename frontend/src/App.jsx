@@ -14,8 +14,8 @@ function App() {
        {authUser && <Header/>}
        <Routes>
         <Route path="/" element= {<HomePage/>}/>
-        <Route path="/LoginPage" element= {<LoginPage/>}/>
-        <Route path="/SignUpPage" element= {<SignUpPage/>}/>
+        <Route path="/login" element= {<LoginPage/>}/>
+        <Route path="/signup" element= {<SignUpPage/>}/>
         <Route path="/transaction/:id" element= {<TransactionPage/>}/>
         <Route path="*" element= {<NotFoundPage/>}/>
        </Routes>
