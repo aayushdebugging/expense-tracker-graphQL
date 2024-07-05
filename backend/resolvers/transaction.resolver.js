@@ -1,4 +1,4 @@
-import Transaction from "../models/transaction.model.js";
+import Transaction from "../models/transaction.Model.js";
 import User from "../models/user.Model.js";
 
 const transactionResolver = {
